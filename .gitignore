@@ -1,0 +1,12 @@
+*/__pycache__/*
+*.mp4
+*.svg
+*.png
+*.log
+*.aux
+*.dvi
+*.tex
+*.gif
+*.txt
+*.jpeg
+*.code-workspace
