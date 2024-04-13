@@ -6,7 +6,6 @@
 *.aux
 *.dvi
 *.tex
-*.gif
 *.txt
 *.jpeg
 *.code-workspace
