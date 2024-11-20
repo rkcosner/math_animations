@@ -23,7 +23,7 @@ if [ ! -d "$foldername/$scenename" ]; then
 fi
 
 # Get full path extension
-first_mp4_file=$(find "${foldername}/${scenename}/media/videos/scene/480p15/" -maxdepth 1 -type f -name "*.mp4" | head -n 1)
+first_mp4_file=$(find "${foldername}/${scenename}/media/videos/scene/1080p60/" -maxdepth 1 -type f -name "*.mp4" | head -n 1)
 
 # Create gif from video 
-ffmpeg -i "$first_mp4_file" -vf "fps=10,scale=320:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "gifs/${foldername}_${scenename}.gif"
+ffmpeg -i "$first_mp4_file" -vf "fps=10,scale=640:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers optimize "gifs/${foldername}_${scenename}.gif"
